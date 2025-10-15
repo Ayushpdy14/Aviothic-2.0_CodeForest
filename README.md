@@ -9,13 +9,13 @@
 <br>
 **Problem Addressed:**
 <br>
-1. Canteen queues are long, orders get mixed up, and payments take time.
+Canteen queues are long, orders get mixed up, and payments take time.
 <br>
-2. Students and staff waste valuable time managing and waiting for food orders.
+Students and staff waste valuable time managing and waiting for food orders.
 <br>
 <br>
 **Proposed Solution:**
 <br>
-1. A digital canteen management system where users can order online, choose payment mode, and track order status.
+A digital canteen management system where users can order online, choose payment mode, and track order status.
 <br>
-2. Staff receive orders instantly and update progress in real time reducing confusion, saving time, and improving efficiency.
+Staff receive orders instantly and update progress in real time reducing confusion, saving time, and improving efficiency.
