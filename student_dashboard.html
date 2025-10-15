@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student/Faculty Dashboard - Order Food</title>
+    
+    <link rel="stylesheet" href="student_style.css"> 
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> 
+    
+    <style>
+        /* Keyframe for Landing Page Entrance Animation */
+        @keyframes fadeInSlideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Apply animation to header and main content with delay */
+        .header {
+            animation: fadeInSlideUp 0.8s ease-out;
+            opacity: 0; 
+            animation-fill-mode: forwards;
+        }
+
+        .main-content {
+            animation: fadeInSlideUp 0.8s ease-out 0.2s; 
+            opacity: 0; 
+            animation-fill-mode: forwards;
+        }
+
+        /* Center the container content vertically for a landing page feel */
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>👨‍🎓 Student/Faculty Ordering</h1>
+            <p>Select your items and place your order.</p>
+        </div>
+
+        <div class="main-content" id="customer-section">
+            <a href="index.html" class="btn btn-secondary" style="float: right; text-decoration: none; padding: 8px 15px;">⬅ Back to User Select</a>
+            
+            <div class="menu-slip-card" id="menu-toggle-btn">
+                <h2>📋 Tap to View Today's Menu</h2>
+                <p>... and select your items</p>
+                <i class="fas fa-chevron-down arrow"></i>
+            </div>
+
+            <div class="menu-list-container" id="menu-container">
+                <div class="menu-list-header">
+                    <span class="col-name">Dish Name</span>
+                    <span class="col-price">Price</span>
+                    <span class="col-qty" style="text-align: center;">Quantity</span>
+                </div>
+                <div id="menu-list-body">
+                    </div>
+            </div>
+
+            <h2>📝 Your Details</h2>
+            <div class="form-section">
+                </div>
+            
+            <div class="order-summary" id="order-summary" style="display: none;">
+                <h3>🛒 Your Order</h3>
+                <div id="order-items"></div>
+                <div class="total" id="total-amount">Total: ₹0</div>
+            </div>
+
+            <div class="form-group">
+                <label for="customer-name">👤 Your Name</label>
+                <input type="text" id="customer-name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="customer-id">🆔 Student/Faculty ID</label>
+                <input type="text" id="customer-id" placeholder="Enter your ID number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="pickup-time">⏰ Preferred Pickup Time</label>
+                <select id="pickup-time" required>
+                    <option value="">Select pickup time</option>
+                    <option value="12:00">12:00 PM</option>
+                    <option value="12:30">12:30 PM</option>
+                    <option value="13:00">1:00 PM</option>
+                    <option value="13:30">1:30 PM</option>
+                    <option value="14:00">2:00 PM</option>
+                    <option value="14:30">2:30 PM</option>
+                    <option value="15:00">3:00 PM</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>💳 Payment Mode</label>
+                <div class="payment-options" id="payment-options-container">
+                    <div class="payment-option" onclick="selectPayment('online')">
+                        <div>💻 Online Payment</div>
+                        <small>UPI/Card/Wallet</small>
+                    </div>
+                    <div class="payment-option" onclick="selectPayment('offline')">
+                        <div>💵 Cash Payment</div>
+                        <small>Pay at counter</small>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 30px;">
+                <button class="btn btn-primary" onclick="placeOrder()">
+                    🚀 Place Order
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="notification" id="notification"></div>
+
+    <script src="student_script.js"></script>
+</body>
+</html>

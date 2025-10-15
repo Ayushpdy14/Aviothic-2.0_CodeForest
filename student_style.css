@@ -1,0 +1,338 @@
+/* --- KEYFRAME ANIMATIONS --- */
+
+/* Keyframe for the subtle animated background gradient shift */
+@keyframes backgroundGradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Keyframe for the floating particle effect */
+@keyframes floatAndFade {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.2;
+        border-radius: 50%;
+    }
+    100% {
+        transform: translateY(-1000px) rotate(360deg);
+        opacity: 0;
+        border-radius: 10%;
+    }
+}
+
+/* --- COLOR PALETTE (Coffee & Cream) --- */
+/* Primary Dark Brown: #6F4E37 (Dark Coffee) */
+/* Accent Light Brown: #B79C8F (Light Taupe/Creamy Brown) */
+/* Background: #EBE0D0 (Soft Beige/Cream) */
+
+
+/* --- GLOBAL STYLES (Fixed Scrolling and Particle Animation) --- */
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    /* Background Gradient: Soft Beige Tones */
+    background: linear-gradient(135deg, #EBE0D0, #D3C1AE, #EBE0D0); 
+    background-size: 400% 400%; 
+    animation: backgroundGradientShift 20s ease infinite; 
+    
+    min-height: 100%;
+    color: #333; 
+    position: relative;
+    overflow-x: hidden; 
+    overflow-y: auto; 
+}
+
+html {
+    height: 100%;
+    overflow-y: scroll; 
+}
+
+/* --- Particle Animation Layer --- */
+body::before {
+    content: '';
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+    
+    /* Particle definitions */
+    background: 
+        radial-gradient(#B79C8F 10%, transparent 10%) 0px 50px,
+        radial-gradient(#6F4E37 10%, transparent 10%) 300px 300px,
+        radial-gradient(#EBE0D0 10%, transparent 10%) 600px 100px,
+        radial-gradient(#B79C8F 10%, transparent 10%) 900px 500px, 
+        radial-gradient(#6F4E37 10%, transparent 10%) 100px 700px,
+        radial-gradient(#EBE0D0 10%, transparent 10%) 400px 900px,
+        radial-gradient(#B79C8F 10%, transparent 10%) 800px 200px;
+    
+    background-size: 1000px 1000px; 
+    animation: floatAndFade 25s linear infinite; 
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative; 
+    z-index: 10;
+    min-height: 100vh; 
+}
+
+.header {
+    text-align: center;
+    color: #6F4E37;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    font-style: italic;
+    color: #444;
+}
+
+.main-content {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15); 
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.main-content:hover {
+    box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+}
+
+/* --- Menu Card Styles --- */
+.menu-slip-card {
+    background: #FAF9F6;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
+}
+
+.menu-slip-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(183, 156, 143, 0.4);
+}
+
+.menu-slip-card h2 {
+    color: #6F4E37;
+}
+
+.menu-slip-card .arrow {
+    color: #B79C8F;
+}
+
+/* Menu List container and items */
+.menu-list-container {
+    border: 1px solid #B79C8F;
+    border-radius: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    display: block; 
+}
+
+.menu-list-container.open {
+    max-height: 5000px;
+}
+
+.menu-list-header {
+    display: flex;
+    font-weight: 600;
+    background-color: #F8F4F2;
+    color: #6F4E37;
+    padding: 15px 20px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.menu-list-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    transition: background-color 0.2s;
+}
+
+.menu-list-item:hover {
+    background-color: #fcfcfc;
+}
+
+/* Define Column Widths */
+.col-name { flex: 4; }
+.col-price { flex: 1; min-width: 80px; }
+.col-qty { flex: 2; min-width: 150px; text-align: right; }
+
+.price {
+    color: #6F4E37;
+    font-weight: bold;
+}
+
+/* --- Quantity Controls --- */
+.qty-btn {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    background: #B79C8F;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.qty-btn:hover {
+    background: #6F4E37;
+}
+
+
+/* --- Order Summary & Total --- */
+.order-summary {
+    background: #fcfcfc;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+}
+
+.total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #6F4E37;
+    text-align: right;
+    margin-top: 15px;
+}
+
+/* --- Form and Input Styles --- */
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da; 
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus, .form-group select:focus {
+    outline: none;
+    border-color: #B79C8F;
+    box-shadow: 0 0 0 3px rgba(183, 156, 143, 0.4); 
+}
+
+.payment-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.payment-option {
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.payment-option:hover {
+    border-color: #B79C8F;
+    box-shadow: 0 0 8px rgba(183, 156, 143, 0.3);
+}
+
+.payment-option.selected {
+    border-color: #6F4E37;
+    background: #F8F4F2;
+    box-shadow: 0 0 10px rgba(111, 78, 55, 0.3);
+}
+
+/* --- Button Styles --- */
+.btn {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px 5px;
+}
+
+.btn-primary {
+    background: #6F4E37;
+    color: white;
+    box-shadow: 0 4px 10px rgba(111, 78, 55, 0.4);
+}
+
+.btn-primary:hover {
+    background: #5A402D;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(111, 78, 55, 0.6); 
+}
+
+.btn-secondary {
+    background: #B79C8F;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.btn-secondary:hover {
+    background: #997E72; 
+    transform: translateY(-1px);
+}
+
+/* --- Notification Styles --- */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 25px;
+    background: #6F4E37;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transform: translateX(400px);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+.notification.show {
+    transform: translateX(0);
+}
+
+/* Removed: All empty or unused rulesets */

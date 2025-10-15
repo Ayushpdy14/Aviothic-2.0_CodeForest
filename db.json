@@ -1,0 +1,323 @@
+{
+  "menuItems": [
+    {
+      "id": 101,
+      "name": "Samosa (1 Pcs)",
+      "price": 10,
+      "category": "SWADESI 🇮🇳"
+    },
+    {
+      "id": 102,
+      "name": "Paneer Patties (1 Pcs)",
+      "price": 20,
+      "category": "SWADESI 🇮🇳"
+    },
+    {
+      "id": 103,
+      "name": "Aloo Patties (1 Pcs)",
+      "price": 10,
+      "category": "SWADESI 🇮🇳"
+    },
+    {
+      "id": 104,
+      "name": "Aloo Samosa (2 Pcs) with Chole",
+      "price": 40,
+      "category": "SWADESI 🇮🇳"
+    },
+    {
+      "id": 105,
+      "name": "Chole Puri (4 Pcs)",
+      "price": 40,
+      "category": "SWADESI 🇮🇳"
+    },
+    {
+      "id": 106,
+      "name": "Chole Bhature (2 Pcs)",
+      "price": 40,
+      "category": "SWADESI 🇮🇳"
+    },
+    {
+      "id": 107,
+      "name": "Chole Rice",
+      "price": 50,
+      "category": "Chinese/Noodles 🍜"
+    },
+    {
+      "id": 108,
+      "name": "Noodles",
+      "price": 30,
+      "category": "Chinese/Noodles 🍜"
+    },
+    {
+      "id": 109,
+      "name": "Fried Rice (With 250ml Coca-Cola)",
+      "price": 40,
+      "category": "Chinese/Noodles 🍜"
+    },
+    {
+      "id": 110,
+      "name": "Manchurian",
+      "price": 60,
+      "category": "Chinese/Noodles 🍜"
+    },
+    {
+      "id": 111,
+      "name": "Plain Maggi",
+      "price": 20,
+      "category": "Instant Meals"
+    },
+    {
+      "id": 112,
+      "name": "Veg Maggi",
+      "price": 30,
+      "category": "Instant Meals"
+    },
+    {
+      "id": 113,
+      "name": "Italian Maggi",
+      "price": 40,
+      "category": "Instant Meals"
+    },
+    {
+      "id": 114,
+      "name": "White Sauce Pasta (With 250ml Coca-Cola)",
+      "price": 60,
+      "category": "Pasta 🍝"
+    },
+    {
+      "id": 115,
+      "name": "Red Sauce Pasta",
+      "price": 50,
+      "category": "Pasta 🍝"
+    },
+    {
+      "id": 116,
+      "name": "Tea Small/Medium",
+      "price": 10,
+      "category": "Hot Drinks ☕"
+    },
+    {
+      "id": 117,
+      "name": "Hot Coffee",
+      "price": 10,
+      "category": "Hot Drinks ☕"
+    },
+    {
+      "id": 201,
+      "name": "French Fries",
+      "price": 30,
+      "category": "Fries/Momos 🍟"
+    },
+    {
+      "id": 202,
+      "name": "Peri Peri French Fries",
+      "price": 40,
+      "category": "Fries/Momos 🍟"
+    },
+    {
+      "id": 203,
+      "name": "Veg Momos",
+      "price": 40,
+      "category": "Fries/Momos 🍟"
+    },
+    {
+      "id": 204,
+      "name": "Paneer Momos",
+      "price": 50,
+      "category": "Fries/Momos 🍟"
+    },
+    {
+      "id": 205,
+      "name": "Veg Fried Momos",
+      "price": 60,
+      "category": "Fries/Momos 🍟"
+    },
+    {
+      "id": 206,
+      "name": "Paneer Tandoori Momos",
+      "price": 70,
+      "category": "Fries/Momos 🍟"
+    },
+    {
+      "id": 207,
+      "name": "Aloo Tikki Burger (With 250ml Coca-Cola)",
+      "price": 60,
+      "category": "Burgers 🍔"
+    },
+    {
+      "id": 208,
+      "name": "Veggie Crunch Burger",
+      "price": 70,
+      "category": "Burgers 🍔"
+    },
+    {
+      "id": 209,
+      "name": "Paneer Burger",
+      "price": 80,
+      "category": "Burgers 🍔"
+    },
+    {
+      "id": 210,
+      "name": "Tandoori Paneer Burger",
+      "price": 90,
+      "category": "Burgers 🍔"
+    },
+    {
+      "id": 211,
+      "name": "Triple Cheese Patty Burger",
+      "price": 100,
+      "category": "Burgers 🍔"
+    },
+    {
+      "id": 301,
+      "name": "Virgin Mojito",
+      "price": 50,
+      "category": "Mocktails/Shakes 🍹"
+    },
+    {
+      "id": 302,
+      "name": "Kiwi Cooler",
+      "price": 25,
+      "category": "Mocktails/Shakes 🍹"
+    },
+    {
+      "id": 303,
+      "name": "Tangy Orange",
+      "price": 30,
+      "category": "Mocktails/Shakes 🍹"
+    },
+    {
+      "id": 304,
+      "name": "Blue Ocean",
+      "price": 30,
+      "category": "Mocktails/Shakes 🍹"
+    },
+    {
+      "id": 305,
+      "name": "Green Apple",
+      "price": 30,
+      "category": "Mocktails/Shakes 🍹"
+    },
+    {
+      "id": 306,
+      "name": "Strawberry Shake",
+      "price": 40,
+      "category": "Mocktails/Shakes 🍹"
+    },
+    {
+      "id": 307,
+      "name": "Chocolate Shake",
+      "price": 40,
+      "category": "Mocktails/Shakes 🍹"
+    },
+    {
+      "id": 308,
+      "name": "KitKat Shake",
+      "price": 50,
+      "category": "Mocktails/Shakes 🍹"
+    },
+    {
+      "id": 309,
+      "name": "Oreo Shake",
+      "price": 50,
+      "category": "Mocktails/Shakes 🍹"
+    },
+    {
+      "id": 310,
+      "name": "Black Current Shake",
+      "price": 50,
+      "category": "Mocktails/Shakes 🍹"
+    },
+    {
+      "id": 311,
+      "name": "Butter Scotch Shake",
+      "price": 50,
+      "category": "Mocktails/Shakes 🍹"
+    },
+    {
+      "id": 312,
+      "name": "Thandai",
+      "price": 30,
+      "category": "Mocktails/Shakes 🍹"
+    },
+    {
+      "id": 313,
+      "name": "Cold Coffee",
+      "price": 40,
+      "category": "Mocktails/Shakes 🍹"
+    },
+    {
+      "id": 314,
+      "name": "All Shakes with Ice Cream",
+      "price": 60,
+      "category": "Mocktails/Shakes 🍹"
+    },
+    {
+      "id": 401,
+      "name": "Veggie Cheese Pizza (With 250ml Coca-Cola)",
+      "price": 100,
+      "category": "Pizza 🍕"
+    },
+    {
+      "id": 402,
+      "name": "Capsicum Mushroom Cheese Pizza",
+      "price": 90,
+      "category": "Pizza 🍕"
+    },
+    {
+      "id": 403,
+      "name": "Cheese N Corn Pizza",
+      "price": 90,
+      "category": "Pizza 🍕"
+    },
+    {
+      "id": 404,
+      "name": "Tandoori Paneer Pizza",
+      "price": 90,
+      "category": "Pizza 🍕"
+    },
+    {
+      "id": 405,
+      "name": "Overloaded Cheese Pizza",
+      "price": 100,
+      "category": "Pizza 🍕"
+    },
+    {
+      "id": 501,
+      "name": "Paneer Tikka Sizzler",
+      "price": 90,
+      "category": "Sizzlers/Kebabs 🔥"
+    },
+    {
+      "id": 502,
+      "name": "Special Veg Sizzler",
+      "price": 110,
+      "category": "Sizzlers/Kebabs 🔥"
+    },
+    {
+      "id": 601,
+      "name": "Roti",
+      "price": 5,
+      "category": "Indian Breads 🍞"
+    },
+    {
+      "id": 602,
+      "name": "Plain Paratha",
+      "price": 15,
+      "category": "Indian Breads 🍞"
+    },
+    {
+      "id": 603,
+      "name": "Aloo Paratha",
+      "price": 25,
+      "category": "Indian Breads 🍞"
+    },
+    {
+      "id": 604,
+      "name": "Paneer Paratha",
+      "price": 35,
+      "category": "Indian Breads 🍞"
+    }
+  ],
+  "orders": []
+}

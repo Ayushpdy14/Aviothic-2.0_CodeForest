@@ -1,0 +1,422 @@
+/* --- KEYFRAME ANIMATIONS (Food-Related) --- */
+
+/* Keyframe for the subtle animated background gradient shift */
+@keyframes backgroundGradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Keyframe for the floating food particle effect */
+@keyframes floatAndFade {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.1;
+    }
+    100% {
+        transform: translateY(-1000px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* --- GLOBAL STYLES (Updated with Cool Colors) --- */
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    /* MODIFIED: Cool Blue/Green Animated Background Gradient */
+    background: linear-gradient(135deg, #4dc3ff, #007bb5, #00c6d7); /* Light Blue, Deep Blue, Cyan */
+    background-size: 400% 400%; 
+    animation: backgroundGradientShift 18s ease infinite; /* Apply background animation */
+    
+    min-height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.user-type-selector {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+/* Added to match HTML structure */
+.user-link {
+    text-decoration: none;
+    display: inline-block; 
+    margin: 10px; 
+}
+
+
+.user-type-btn {
+    padding: 15px 30px;
+    background: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    /* Updated transition for a better 'pop' effect */
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    min-width: 250px; 
+}
+
+.user-type-btn:hover {
+    /* Updated hover effect: scale and shadow for a 'pop' */
+    transform: scale(1.05); 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3), 0 0 0 5px rgba(255, 255, 255, 0.4); 
+}
+
+.user-type-btn.active {
+    background: #007bb5; /* Changed to Deep Blue */
+    color: white;
+}
+
+.main-content {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+.menu-slip-card {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 20px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.menu-slip-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.menu-slip-card h2 {
+    margin-bottom: 5px;
+    color: #007bb5; /* Changed to Deep Blue */
+    display: inline;
+}
+
+.menu-slip-card p {
+    color: #666;
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+.menu-slip-card .arrow {
+    font-size: 1.5rem;
+    color: #888;
+    transition: transform 0.3s ease;
+}
+
+.menu-slip-card.active .arrow {
+    transform: rotate(180deg);
+}
+
+/* Initially hide the menu list */
+.menu-list-container {
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+/* Show the menu when active */
+.menu-list-container.open {
+    display: block;
+    max-height: 5000px; 
+}
+
+.menu-list-container {
+    width: 100%;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+.menu-list-header {
+    display: flex;
+    font-weight: bold;
+    background-color: #f2f2f2;
+    padding: 15px 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.menu-list-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s;
+}
+
+.menu-list-item:hover {
+    background-color: #f9f9f9;
+}
+
+/* Define Column Widths */
+.col-name { flex: 4; }
+.col-price { flex: 1; min-width: 80px; }
+.col-qty { flex: 2; min-width: 150px; text-align: right; }
+
+.menu-item:hover {
+    border-color: #00c6d7; /* Changed to Cyan */
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.menu-item.selected {
+    border-color: #007bb5; /* Changed to Deep Blue */
+    background: #f0f8ff; /* Light blue background */
+}
+
+.menu-item h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bb5; /* Changed to Deep Blue */
+    margin-bottom: 15px;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.qty-btn {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    background: #00c6d7; /* Changed to Cyan */
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.qty-btn:hover {
+    background: #007bb5; /* Changed to Deep Blue */
+}
+
+.qty-display {
+    font-weight: bold;
+    min-width: 20px;
+    text-align: center;
+}
+
+.order-summary {
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.order-summary h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bb5; /* Changed to Deep Blue */
+    text-align: right;
+    margin-top: 15px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus, .form-group select:focus {
+    outline: none;
+    border-color: #00c6d7; /* Changed to Cyan */
+}
+
+.payment-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.payment-option {
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.payment-option:hover {
+    border-color: #00c6d7; /* Changed to Cyan */
+}
+
+.payment-option.selected {
+    border-color: #007bb5; /* Changed to Deep Blue */
+    background: #f0f8ff;
+}
+
+.btn {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px 5px;
+}
+
+.btn-primary {
+    background: #007bb5; /* Changed to Deep Blue */
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #005f91; /* Darker Blue */
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #5a6268;
+}
+
+.staff-dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Note: Order status colors like Yellow/Blue/Green are kept for clear status indication */
+.order-card {
+    border: 2px solid #e0e0e0;
+    border-radius: 15px;
+    padding: 20px;
+    background: white;
+}
+/* ... (Rest of the order-card, status-pending/preparing/ready styles remain the same) ... */
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 25px;
+    background: #007bb5; /* Changed to Deep Blue */
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transform: translateX(400px);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+.notification.show {
+    transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+    .user-type-selector {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .payment-options {
+        grid-template-columns: 1fr;
+    }
+}

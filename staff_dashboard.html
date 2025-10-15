@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canteen Staff Dashboard - Manage Orders</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>👨‍🍳 Staff Dashboard</h1>
+            <p>Monitor and update incoming orders.</p>
+        </div>
+
+        <div class="main-content" id="staff-section">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+                <h2>📊 Live Order Queue</h2>
+                <div>
+                    <a href="index.html" class="btn btn-secondary" style="text-decoration: none; padding: 12px 20px; margin-right: 5px;">⬅ User Select</a>
+                    <button class="btn btn-secondary" onclick="refreshOrders()">🔄 Refresh Orders</button>
+                </div>
+            </div>
+
+            <div class="staff-dashboard" id="staff-dashboard-grid">
+                </div>
+        </div>
+    </div>
+
+    <div class="notification" id="notification"></div>
+
+    
+    <script src="staff_script.js"></script>
+</body>
+</html>
