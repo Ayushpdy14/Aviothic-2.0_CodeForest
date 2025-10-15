@@ -1,4 +1,4 @@
-# Aviothic-2.0
+**# Aviothic-2.0**
 **"THE CLASSIC CAFE"**
 <br>
 (Smart Canteen Management System)
@@ -9,12 +9,13 @@
 <br>
 **Problem Addressed:**
 <br>
-Canteen queues are long, orders get mixed up, and payments take time.
+1. Canteen queues are long, orders get mixed up, and payments take time.
 <br>
-Students and staff waste valuable time managing and waiting for food orders.
+2. Students and staff waste valuable time managing and waiting for food orders.
+<br>
 <br>
 **Proposed Solution:**
 <br>
-A digital canteen management system where users can order online, choose payment mode, and track order status.
+1. A digital canteen management system where users can order online, choose payment mode, and track order status.
 <br>
-Staff receive orders instantly and update progress in real time reducing confusion, saving time, and improving efficiency.
+2. Staff receive orders instantly and update progress in real time reducing confusion, saving time, and improving efficiency.
