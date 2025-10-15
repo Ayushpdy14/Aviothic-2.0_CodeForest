@@ -1,6 +1,6 @@
 **# Aviothic-2.0**
 <br>
-**"THE CLASSIC CAFE"**
+<u>"THE CLASSIC CAFE"</u>
 <br>
 **A fullStack** (Smart Canteen Management System)
 <br>
@@ -40,3 +40,6 @@ Data Storage (Database)
 **Key Tools & Dependencies**
 <br>
 **npm (Node Package Manager),cors(Cross-Origin Resource Sharing),body-parser,Font Awesome,Terminal/CMD(node server.js)**
+<br>
+<br>
+**
