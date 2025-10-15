@@ -26,17 +26,17 @@ Staff receive orders instantly and update progress in real time reducing confusi
 <br>
 Frontend (Client-Side)
 <br>
-HTML5,CSS3,JavaScript
+**HTML5,CSS3,JavaScript**
 <br>
 Backend (Server-Side)
 <br>
-Node.js,Express.js,(e.g., /api/menu, /api/orders)
+**Node.js,Express.js,(e.g., /api/menu, /api/orders)**
 <br>
 Data Storage (Database)
 <br>
-Flat JSON File (db.json)
+**Flat JSON File (db.json)**
 <br>
 <br>
 **Key Tools & Dependencies**
 <br>
-npm (Node Package Manager),cors(Cross-Origin Resource Sharing),body-parser,Font Awesome,Terminal/CMD(node server.js)
+**npm (Node Package Manager),cors(Cross-Origin Resource Sharing),body-parser,Font Awesome,Terminal/CMD(node server.js)**
