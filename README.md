@@ -24,15 +24,15 @@ Staff receive orders instantly and update progress in real time reducing confusi
 <br>
 **Tech Stack:**
 <br>
-1. Frontend (Client-Side)
+Frontend (Client-Side)
 <br>
 HTML5,CSS3,JavaScript
 <br>
-2. Backend (Server-Side)
+Backend (Server-Side)
 <br>
 Node.js,Express.js,(e.g., /api/menu, /api/orders)
 <br>
-3. Data Storage (Database)
+Data Storage (Database)
 <br>
 Flat JSON File (db.json)
 <br>
