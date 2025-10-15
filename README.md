@@ -14,7 +14,9 @@ Students and faculty can place food orders online, while canteen staff manage an
 
 Check out a short demo highlighting the UI and frontend design of The Classic Cafe.
 It showcases the layout, navigation, and user ordering experience.
-🔗 Watch the UI demo
+<br>
+🔗 Watch the UI demo:
+👉 [Click here to view the video](https://www.linkedin.com/posts/sanya-singh-rathore-9a354833b_6f4e37-b79c8f-html-activity-7384160858945454081-cwMp?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFVU64sBzaUi7mFC2tTZq9762JivInvdIP0)
 
 ---
 
