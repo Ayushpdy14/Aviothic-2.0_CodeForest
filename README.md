@@ -1,5 +1,4 @@
-**# Aviothic-2.0**
-<br>
+
 <u> **"THE CLASSIC CAFE"** </u>
 <br>
 **A fullStack** (Smart Canteen Management System)
