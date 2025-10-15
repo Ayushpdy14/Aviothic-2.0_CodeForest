@@ -10,6 +10,7 @@
 <br>
 **Problem Addressed:**
 <br>
+<br>
 Canteen queues are long, orders get mixed up, and payments take time.
 <br>
 Students and staff waste valuable time managing and waiting for food orders.
@@ -17,12 +18,14 @@ Students and staff waste valuable time managing and waiting for food orders.
 <br>
 **Proposed Solution:**
 <br>
+<br>
 A digital canteen management system where users can order online, choose payment mode, and track order status.
 <br>
 Staff receive orders instantly and update progress in real time reducing confusion, saving time, and improving efficiency.
 <br>
 <br>
 **Tech Stack:**
+<br>
 <br>
 Frontend (Client-Side)
 <br>
@@ -39,10 +42,12 @@ Data Storage (Database)
 <br>
 **Key Tools & Dependencies**
 <br>
+<br>
 **npm (Node Package Manager),cors(Cross-Origin Resource Sharing),body-parser,Font Awesome,Terminal/CMD(node server.js)**
 <br>
 <br>
 **How To Run Project:**
+<br>
 <br>
 Place all project files **(.html, .css, .js, server.js, db.json)** into one single folder **(e.g., CanteenManagement).**
 <br>
@@ -60,3 +65,5 @@ Open your web browser and go to the address **http://localhost:3000/index.html.*
 Team Leader: **SHREYA YADAV**
 <br>
 Team Members: **SANYA SINGH, AYUSH PANDEY, KUMKUM SAHU**
+<br>
+**B.Tech(AIML) 3rd Year in Kanpur Institue of Technology**
