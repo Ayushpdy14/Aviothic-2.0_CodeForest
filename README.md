@@ -1,6 +1,6 @@
 **# Aviothic-2.0**
 <br>
-<u>"THE CLASSIC CAFE"</u>
+<u> **"THE CLASSIC CAFE"** </u>
 <br>
 **A fullStack** (Smart Canteen Management System)
 <br>
@@ -42,4 +42,21 @@ Data Storage (Database)
 **npm (Node Package Manager),cors(Cross-Origin Resource Sharing),body-parser,Font Awesome,Terminal/CMD(node server.js)**
 <br>
 <br>
-**
+**How To Run Project:**
+<br>
+Place all project files **(.html, .css, .js, server.js, db.json)** into one single folder **(e.g., CanteenManagement).**
+<br>
+Open your Terminal or Command Prompt and use the cd command to navigate into that folder (e.g., cd CanteenManagement).
+<br>
+**Run npm install** and wait for the server tools to install.
+<br>
+Start the backend server by running **node server.js**. The terminal will confirm the server is running on a port **(likely 3000)**.
+<br>
+Open your web browser and go to the address **http://localhost:3000/index.html.**
+<br>
+<br>
+**Team: CODEFOREST**
+<br>
+Team Leader: **SHREYA YADAV**
+<br>
+Team Members: **SANYA SINGH, AYUSH PANDEY, KUMKUM SAHU**
