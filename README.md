@@ -5,7 +5,7 @@
 
 ## 📝 Project Overview
 
-**The Classic Cafe** is a digital canteen management system built to improve food ordering and handling inside college campuses.
+**The Classic Cafe** is a digital canteen management system built to improve food ordering and handling inside college campuses and schools.
 Students and faculty can place food orders online, while canteen staff manage and process these orders efficiently via their panel — reducing confusion and saving time.
 
 ---
